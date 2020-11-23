@@ -1,0 +1,305 @@
+body
+{
+    background-color: rgb(110,131,203);
+    width: 85%;
+    margin: auto;
+    font-size: 17px;
+    text-align: justify;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+body > header {
+    order:1;
+}
+body > main {
+    order:3;
+}
+body > aside {
+    order:2;
+}
+
+header
+{
+    padding-top: 40px;
+}
+header h1                                          /*header options*/
+{
+    font-size: 3em;
+    font-family: 'Lato', sans-serif;
+    color: rgb(001,053,103);
+}
+header p
+{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+h1 span
+{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+}
+p span
+{
+    font-style: normal;
+    text-decoration: underline rgb(001,053,103);
+}
+
+h2                                                  /*Options titres sections*/
+{
+    border-bottom: 2px solid rgb(001,053,103);
+}
+header i
+{
+    padding-right: 40px;
+    color: rgb(001,053,103);
+    font-size: 1.5em;
+}
+
+
+ul                                          /* MAIN liste à puces options*/
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    list-style: none;
+    position: relative;
+}
+.chip
+{
+    color: rgb(001,053,103);
+    position: relative;
+    padding-top: 19px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.xp
+{
+    display: flex;
+    flex-direction: column;  
+}
+.xp-date
+{
+    font-weight: bold;
+}
+ul .xp
+{
+    width: 25%;
+    margin-right: 10px;
+}
+ul .txt
+{
+    width: 75%;
+}
+                            /*Options RECOMMANDATIONS*/
+.personne
+{
+    padding-top: 25px;
+}
+.personne p
+{
+    margin: 3px;
+    font-weight: bolder;
+}
+.personne a
+{
+    color: black;
+}
+.email
+{
+    font-weight: lighter;
+}
+
+
+
+aside                                         /*ASIDE*/
+{
+    background-color: rgb(001,053,103);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#contact
+{
+    padding-bottom: 30px;
+ }
+aside p                                       /*texte aside*/
+{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+aside h3                                      /*titre aside*/
+{
+    background-color: #0288D1;
+    text-align: center;
+}
+
+#photocv                                       /*Photo cv options*/
+{
+    text-align: center;
+    padding: 30px;
+}
+#photocv img
+{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 0px 3px 3px black;
+}
+a                                               /*liens aside*/
+{
+    text-decoration: none;
+    color: white;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+.infos                                          /*CONTACT options*/
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px
+}
+.infos p
+{
+    margin: -1px;
+}
+.infos a
+{
+    word-wrap: break-word;
+}
+
+
+#loisirs p                                    /*Logo loisirs Options*/
+{
+    display: flex;
+    justify-content: space-around;
+    font-size: 4em;
+    padding-bottom: 20px;
+}
+#loisirs i
+{
+    border: solid 2px white;
+    border-radius: 50%;
+    padding:10px;
+}
+
+@media all and (min-width: 1024px)
+{
+    body
+    {
+        height: 100%;
+        width: 90%;
+        font-size: 20px;
+    }
+    #title
+    {
+        padding-left: 500px;
+    }
+    main
+    {
+        position: absolute;
+        padding-top: 200px;
+        padding-bottom: 50px;
+        padding-left: 500px;
+        padding-right: 25px;
+        margin-top: 100px;
+        max-width: 75%;
+        min-height: 100%;
+    }
+    aside
+    {
+        position: absolute;
+        padding-top: 0px;
+        max-width: 450px;
+        min-height: 100%;
+        margin-right: 50px;
+        padding-bottom: 100px;
+    }
+    #photocv img
+    {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 0px 3px 3px black;
+    }
+    #recommandations
+    {
+        display: flex;
+        margin-bottom: 25px;
+    }
+    .personne
+    {
+        padding-right: 200px;
+    }
+    #loisirs
+    {
+        padding-top: 600px;
+    }
+    #loisirs p
+    {
+        font-size: 3em;
+    }   
+}
+@media all and (min-width: 1024px) and (max-width: 1650px)
+{
+    #title
+    {
+        padding-left: 350px;
+    }
+    main
+    {
+        position: absolute;
+        padding-top: 200px;
+        padding-bottom: 50px;
+        padding-left: 350px;
+        padding-right: 25px;
+        margin-top: 100px;
+        max-width: 75%;
+        min-height: 100%;
+    }
+    aside
+    {
+        position: absolute;
+        min-height: 100%;
+        max-width: 300px;
+        min-height: 100%;
+        margin-right: 50px;
+        padding-bottom: 240px;
+    }
+    #recommandations
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #photocv img
+    {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 0px 3px 3px black;
+    }
+    #loisirs p
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+}
